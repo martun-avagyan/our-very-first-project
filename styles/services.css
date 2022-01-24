@@ -2,8 +2,32 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: rgb(52, 165, 165);
+}
+body {
+  background-color: black;
+}
+h1 {
+  text-align: center;
+  color: grey;
+}
+h2 {
+  color: grey;
+  text-align: center;
 }
 
-h2 {
-  color: blue;
+.article-gym {
+}
+
+.article-group-exercises {
+}
+.article-swimming-pool {
+}
+.all-articles {
+  display: flex;
+  font-size: 25px;
+  background-color: khaki;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 60px;
 }
