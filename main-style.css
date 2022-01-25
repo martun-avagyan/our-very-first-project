@@ -3,3 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* //////////////// header //////////////// */ 
+
+.header-container {
+background-image: url("image.png");
+background-repeat: no-repeat;
+background-size: cover;
+height: 610px;
+}
+
