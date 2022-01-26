@@ -39,3 +39,13 @@ height: 610px;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.ready {
+    background-color: orangered;
+    border-radius: 20px;
+    border: 1px solid orangered;
+    width: 145px;
+    height: 45px;
+    color: white;
+    font-size: 23px;
+}
+
