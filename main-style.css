@@ -13,3 +13,12 @@ background-size: cover;
 height: 610px;
 }
 
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    margin-right: 152px;
+    padding-top: 46px;
+    text-transform: uppercase;
+
+}
