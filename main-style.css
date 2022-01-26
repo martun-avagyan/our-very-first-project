@@ -20,5 +20,11 @@ height: 610px;
     margin-right: 152px;
     padding-top: 46px;
     text-transform: uppercase;
+}
 
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+    font-size: 20px;
 }
