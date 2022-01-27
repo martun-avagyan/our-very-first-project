@@ -17,3 +17,18 @@ body {
   background: rgba(225, 225, 225, 0.2);
   border-radius: 10px;
 }
+.form-header {
+  background-color: rgba(225, 225, 225, 0.3);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.form-header h1 {
+  font-size: 39px;
+  font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  color: chocolate;
+  padding: 20px 0;
+  border-bottom: 1px solid #cccccc;
+}
