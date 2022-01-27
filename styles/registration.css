@@ -32,3 +32,34 @@ body {
   padding: 20px 0;
   border-bottom: 1px solid #cccccc;
 }
+/* Form Body */
+/*---------------------------------------*/
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-body .label-title {
+  color: chocolate;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.form-input {
+  font-size: 17px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 34px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #333333;
+  text-align: left;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  background: rgba(225, 225, 225, 0.6);
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  color: #d9d9d9;
+}
