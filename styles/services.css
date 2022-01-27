@@ -31,7 +31,10 @@ body {
 .all-articles {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+  gap: 40px;
+  padding-left: 5%;
+  padding-right: 5%;
+  justify-content: space-around;
 }
 .article-wrapper-gym {
 }
