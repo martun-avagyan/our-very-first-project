@@ -5,10 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration</title>
-    <link
-      rel="stylesheet"
-      href="/our-very-first-project/styles/registration.css"
-    />
+    <link rel="stylesheet" href="./styles/registration.css" />
   </head>
   <body>
     <form class="signup-form" action="/register" method="post">
@@ -54,6 +51,33 @@
             oninvalid="this.setCustomValidity('Please enter your email')"
             oninput="this.setCustomValidity('')"
           />
+        </div>
+        <!-- Passwrod and confirm password -->
+
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label for="password" class="label-title">Password *</label>
+            <input
+              type="password"
+              id="password"
+              class="form-input"
+              placeholder="enter your password"
+              required="required"
+            />
+          </div>
+
+          <div class="form-group right">
+            <label for="confirm-password" class="label-title"
+              >Confirm Password *</label
+            >
+            <input
+              type="password"
+              class="form-input"
+              id="confirm-password"
+              placeholder="enter your password again"
+              required="required"
+            />
+          </div>
         </div>
       </div>
 

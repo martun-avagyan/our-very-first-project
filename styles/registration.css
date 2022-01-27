@@ -2,12 +2,15 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  color: royalblue;
 }
 body {
   width: 100vh;
   height: 100vh;
-  background: url("./assets/backImg.jpg") 0 0/100% 100% no-repeat;
+  background: url("../images/REG-backImg.jpg") 0 0/100% 100% no-repeat;
 }
+
 .signup-form {
   font-family: "Roboto", sans-serif;
   position: fixed;
@@ -17,6 +20,7 @@ body {
   background: rgba(225, 225, 225, 0.2);
   border-radius: 10px;
 }
+
 .form-header {
   background-color: rgba(225, 225, 225, 0.3);
   border-top-left-radius: 10px;
@@ -32,6 +36,7 @@ body {
   padding: 20px 0;
   border-bottom: 1px solid #cccccc;
 }
+/*---------------------------------------*/
 /* Form Body */
 /*---------------------------------------*/
 
