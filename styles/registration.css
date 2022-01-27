@@ -1,6 +1,19 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vh;
+  height: 100vh;
+  background: url("./assets/backImg.jpg") 0 0/100% 100% no-repeat;
+}
+.signup-form {
+  font-family: "Roboto", sans-serif;
+  position: fixed;
+  width: 450px;
+  height: 400px;
+  margin: 90px 90px auto;
+  background: rgba(225, 225, 225, 0.2);
+  border-radius: 10px;
+}
