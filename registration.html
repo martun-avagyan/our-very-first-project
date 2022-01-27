@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/registration.css" />
   </head>
   <body>
-    <form class="signup-form" action="/register" method="post">
+    <form class="signup-form" action="#" method="get">
       <!-- form header -->
       <div class="form-header">
         <h1>Create Account</h1>
@@ -24,17 +24,22 @@
               type="text"
               id="firstname"
               class="form-input"
-              placeholder="Enter your first name"
-              required="required"
+              required
+              placeholder="Enter Name"
+              oninvalid="this.setCustomValidity('Please enter your name')"
+              oninput="this.setCustomValidity('')"
             />
           </div>
           <div class="form-group right">
-            <label for="lastname" class="label-title">Last name</label>
+            <label for="lastname" class="label-title">Last name *</label>
             <input
               type="text"
               id="lastname"
               class="form-input"
-              placeholder="Enter your last name"
+              required
+              placeholder="Enter Last Name"
+              oninvalid="this.setCustomValidity('Please enter your last name')"
+              oninput="this.setCustomValidity('')"
             />
           </div>
         </div>
