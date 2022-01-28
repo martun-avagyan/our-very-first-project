@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  color: royalblue;
+}
+body {
+  width: 100vh;
+  height: 100vh;
+  background: url("../images/REG-backImg.jpg") 0 0/100% 100% no-repeat;
+}
+
+.signup-form {
+  font-family: "Roboto", sans-serif;
+  position: fixed;
+  width: 450px;
+  height: 400px;
+  margin: 90px 90px auto;
+  background: rgba(225, 225, 225, 0.2);
+  border-radius: 10px;
+}
+
+.form-header {
+  background-color: rgba(225, 225, 225, 0.3);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.form-header h1 {
+  font-size: 39px;
+  font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  color: chocolate;
+  padding: 20px 0;
+  border-bottom: 1px solid #cccccc;
+}
+/*---------------------------------------*/
+/* Form Body */
+/*---------------------------------------*/
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-body .label-title {
+  color: chocolate;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.form-input {
+  font-size: 17px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 34px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #333333;
+  text-align: left;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  background: rgba(225, 225, 225, 0.6);
+  outline: none;
+}
+
+.horizontal-group .left {
+  float: left;
+  width: 49%;
+}
+
+.horizontal-group .right {
+  float: right;
+  width: 49%;
+}
+
+::-webkit-input-placeholder {
+  color: #d9d9d9;
+}
+
+/* Form Footer */
+/*---------------------------------------*/
+
+.form-footer {
+  clear: both;
+}
+
+.signup-form .form-footer {
+  background-color: rgba(225, 225, 225, 1.2);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px 40px;
+  text-align: right;
+  border-top: 1px solid #cccccc;
+}
+
+.form-footer span {
+  float: left;
+  margin-top: 10px;
+  color: #999;
+  font-style: italic;
+  font-weight: thin;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: chocolate;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+  color: rgb(180, 148, 125);
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: white;
+}
