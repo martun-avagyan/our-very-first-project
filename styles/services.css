@@ -82,3 +82,16 @@ body {
   transform: scale(1.2);
   transition: 0.5s;
 }
+
+.article-wrapper-for-kids,
+.article-wrapper-group-exercises,
+.article-wrapper-gym,
+.article-wrapper-spa,
+.article-wrapper-personal-trainers,
+.article-wrapper-swimming-pool {
+  transition: 0.5s;
+}
+
+.hidden {
+  display: none;
+}
