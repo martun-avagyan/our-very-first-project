@@ -295,6 +295,16 @@ font-weight: 500;
     transform: scale(1.15);
 }
 
+#gmap_canvas {
+    display: inline-block;
+}
+
+p {
+    color: white;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
 /* ////// Footer responsive ///// */
 @media(max-width: 767px){
   .footer-col{
