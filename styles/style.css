@@ -1,7 +1,20 @@
+/*
+Main Color: #FF3F34 Shade: #E6392F Tint: #FF5248
+Grey Color: #E9E9E9 Shade: #737373 Tint: #F3F3F3
+
+D
+
+ */
+
 * {
   padding: 0;
   margin: 0;
+  font-family: sans-serif;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
@@ -24,8 +37,21 @@ nav {
   list-style: none;
 }
 
+.nav-item > a {
+  color: white;
+}
+
+.nav-item:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.nav-item:hover > a {
+  color: #e67e22;
+}
+
 .logo {
-  padding-left: 30px;
+  padding-left: 10px;
 }
 
 .top-background {
@@ -33,4 +59,30 @@ nav {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.top-text-and-buttons {
+  text-align: center;
+  padding: 30px;
+}
+
+.button,
+button:visited {
+  transition: 0.5s;
+  margin: 15px;
+  width: 145px;
+  height: 44px;
+  background: rgba(233, 233, 233, 0.21);
+  border: 1px solid #e67e22;
+  box-sizing: border-box;
+  border-radius: 200px;
+}
+
+.button:hover {
+  margin: 15px;
+  width: 145px;
+  height: 44px;
+  background: #e67e22;
+  border: 1px solid #e67e22;
+  box-sizing: border-box;
+  border-radius: 200px;
 }
