@@ -55,10 +55,23 @@ nav {
 }
 
 .top-background {
-  background-image: url(/images/image.png);
+  background-image: url(/assets/images/image.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  transition: 0.3s;
+  height: 100vh;
+  box-shadow: black inset;
+}
+
+.overlay {
+  position: absolute;
+  background-color: black;
+  opacity: 0.2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .top-text-and-buttons {
   text-align: center;
@@ -85,4 +98,7 @@ button:visited {
   border: 1px solid #e67e22;
   box-sizing: border-box;
   border-radius: 200px;
+}
+.background-img-text {
+  color: #e67e22;
 }
