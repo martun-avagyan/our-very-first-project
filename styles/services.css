@@ -1,8 +1,78 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: sans-serif;
   box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
+}
+
+nav {
+  width: 100%;
+}
+.nav-items {
+  justify-content: flex-end;
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-item > a {
+  color: white;
+}
+
+.nav-item:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.nav-item:hover > a {
+  color: #e67e22;
+}
+
+.logo {
+  padding-left: 10px;
+}
+
+.top-background {
+  background-image: url(/assets/images/image.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+  min-height: 400px;
+  height: 100vh;
+}
+
+.dark-overlay {
+  height: 100vh;
+  min-height: 400px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.top-text-and-buttons {
+  text-align: center;
+  padding: 30px;
+}
+
+.background-img-text {
+  color: #e67e22;
+  margin-top: 15vh;
+  font-size: 50px;
+}
+
 h1 {
   color: crimson;
 }
@@ -22,65 +92,15 @@ body {
   color: rgb(69, 69, 69);
 }
 
-.header {
-}
-.navbar {
-}
 .services {
   padding-bottom: 50px;
 }
 .all-articles {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  padding-left: 5%;
-  padding-right: 5%;
+  gap: 40px 80px;
+  padding: 40px;
   justify-content: space-around;
-}
-.article-wrapper-gym {
-}
-.article-gym {
-}
-.paragraph-gym {
-}
-.article-wrapper-group-exercises {
-}
-.article-group-exercises {
-}
-.paragraph-group-exercises {
-}
-.article-wrapper-swimming-pool {
-}
-.article-swimming-pool {
-}
-.paragraph-swimming-pool {
-}
-.article-wrapper-personal-trainers {
-}
-.article-personal-trainers {
-}
-.paragraph-personal-trainers {
-}
-.article-wrapper-spa {
-}
-.article-spa {
-}
-.paragraph-spa {
-}
-.article-wrapper-for-kids {
-}
-.article-for-kids {
-}
-.paragraph-for-kids {
-}
-
-.article-wrapper-for-kids:hover,
-.article-wrapper-group-exercises:hover,
-.article-wrapper-gym:hover,
-.article-wrapper-spa:hover,
-.article-wrapper-personal-trainers:hover,
-.article-wrapper-swimming-pool:hover {
-  transform: scale(1.2);
   transition: 0.5s;
   cursor: pointer;
 }
@@ -92,6 +112,64 @@ body {
 .article-wrapper-personal-trainers,
 .article-wrapper-swimming-pool {
   transition: 0.5s;
+  background: #fff;
+  padding: 20px;
+  font-size: 13px;
+  line-height: 22px;
+  position: relative;
+  background-image: url("/assets/images/image.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.article-wrapper-for-kids h3,
+.article-wrapper-group-exercises h3,
+.article-wrapper-gym h3,
+.article-wrapper-spa h3,
+.article-wrapper-personal-trainers h3,
+.article-wrapper-swimming-pool h3 {
+  color: #e67e22;
+  margin-bottom: 10px;
+}
+
+.article-gym {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.paragraph-gym {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid #fff;
+  color: #fff;
+  position: absolute;
+  visibility: hidden;
+  transition: 0.4s;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.article-gym h3 {
+  visibility: visible;
+}
+
+.article-gym:hover h3 {
+  visibility: hidden;
+}
+
+.article-gym:hover .paragraph-gym {
+  visibility: visible;
+  opacity: 1;
 }
 
 .hidden {
