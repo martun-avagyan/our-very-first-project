@@ -6,30 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services</title>
     <link rel="stylesheet" href="/styles/services.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
-    <header class="header">
-      <h2 class="navbar">Navbar</h2>
-      <h2 class="services">Services</h2>
-    </header>
+    <div id="imgContainer" class="top-background">
+      <div class="dark-overlay">
+        <header>
+          <a href="/index.html">
+            <div class="logo">
+              <img src="/assets/images/Rectangle.png" alt="" />
+            </div>
+          </a>
+          <nav>
+            <ul class="nav-items">
+              <li class="nav-item"><a href="/services.html">Services</a></li>
+              <li class="nav-item">
+                <a href="/registration.html">I want In</a>
+              </li>
+              <li class="nav-item"><a href="#">About Us</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div class="top-text-and-buttons">
+          <h2 class="background-img-text">Services</h2>
+        </div>
+      </div>
+    </div>
     <div class="all-articles">
       <!-- Gym Section -->
       <div class="article-wrapper-gym">
         <article class="article-gym">
           <h3>Gym</h3>
-          <p class="paragraph-gym">
+
+          <!-- COPY THIS PART AND NOT FORGET TO CHANGE CLASSES TO SAME NAME -->
+          <div class="paragraph-gym">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
             tenetur, quaerat earum voluptatem aperiam corrupti. Iure,
             laudantium! Explicabo voluptates id obcaecati asperiores maxime
             repellat quod quos, accusamus quasi recusandae quas!
-          </p>
+          </div>
         </article>
       </div>
       <!-- Group Exercises Section -->
-      <div class="article-wrapper-group-exercises">
-        <article class="article-group-exercises">
+      <div class="article-wrapper-gym">
+        <article class="article-gym">
           <h3>Group Exercises</h3>
-          <p class="paragraph-group-exercises">
+          <p class="paragraph-gym">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
             tenetur, quaerat earum voluptatem aperiam corrupti. Iure,
             laudantium! Explicabo voluptates id obcaecati asperiores maxime
@@ -39,10 +65,10 @@
       </div>
 
       <!-- Swimming Pool Section -->
-      <div class="article-wrapper-swimming-pool">
-        <article class="article-swimming-pool">
+      <div class="article-wrapper-gym">
+        <article class="article-gym">
           <h3>Swimming Pool</h3>
-          <p class="paragraph-swimming-pool">
+          <p class="paragraph-gym">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
             tenetur, quaerat earum voluptatem aperiam corrupti. Iure,
             laudantium! Explicabo voluptates id obcaecati asperiores maxime
@@ -51,10 +77,10 @@
         </article>
       </div>
       <!-- Personal Trainers -->
-      <div class="article-wrapper-personal-trainers">
-        <article class="article-personal-trainers">
+      <div class="article-wrapper-gym">
+        <article class="article-gym">
           <h3>Personal Trainers</h3>
-          <p class="paragraph-personal-trainers">
+          <p class="paragraph-gym">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
             tenetur, quaerat earum voluptatem aperiam corrupti. Iure,
             laudantium! Explicabo voluptates id obcaecati asperiores maxime
@@ -63,10 +89,10 @@
         </article>
       </div>
       <!-- SPA -->
-      <div class="article-wrapper-spa">
-        <article class="article-spa">
+      <div class="article-wrapper-gym">
+        <article class="article-gym">
           <h3>SPA</h3>
-          <p class="paragraph-spa">
+          <p class="paragraph-gym">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
             tenetur, quaerat earum voluptatem aperiam corrupti. Iure,
             laudantium! Explicabo voluptates id obcaecati asperiores maxime
@@ -75,10 +101,10 @@
         </article>
       </div>
       <!-- For Kids -->
-      <div class="article-wrapper-for-kids">
-        <article class="article-for-kids">
+      <div class="article-wrapper-gym">
+        <article class="article-gym">
           <h3>For Kids</h3>
-          <p class="paragraph-for-kids">
+          <p class="paragraph-gym">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
             tenetur, quaerat earum voluptatem aperiam corrupti. Iure,
             laudantium! Explicabo voluptates id obcaecati asperiores maxime
@@ -87,6 +113,54 @@
         </article>
       </div>
     </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="gmap_canvas">
+          <iframe
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?q=armenian%20code%20academy&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          >
+          </iframe>
+        </div>
+        <div class="row">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Online Shop</h4>
+            <ul>
+              <li><a href="#">protein</a></li>
+              <li><a href="#">bags</a></li>
+              <li><a href="#">shoes</a></li>
+              <li><a href="#">uniform</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+              <a href="#"> <i class="fab fa-twitter"></i> </a>
+              <a href="#"> <i class="fab fa-instagram"></i> </a>
+              <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <div class="modal hidden">
       <button class="close-modal">&times;</button>
       <h3 class="modal-gym-heading">Gym</h3>
@@ -98,6 +172,7 @@
     </div>
 
     <div class="overlay hidden"></div>
-    <script src="scripts/services.js"></script>
+
+    <script src="/scripts/script.js"></script>
   </body>
 </html>

@@ -5,26 +5,87 @@
   font-family: "Times New Roman", Times, serif;
   color: royalblue;
 }
+
+a {
+  text-decoration: none;
+}
+
 body {
+  background-color: black;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
+}
+
+nav {
+  width: 100%;
+}
+.nav-items {
+  justify-content: flex-end;
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-item > a {
+  color: white;
+}
+
+.nav-item:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.nav-item:hover > a {
+  color: #e67e22;
+}
+
+.logo {
+  padding-left: 10px;
+}
+
+.top-background {
+  background-image: url(/assets/images/image.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+  min-height: 400px;
+  height: 100vh;
+}
+
+.dark-overlay {
+  height: 100vh;
+  min-height: 400px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.top-text-and-buttons {
+  text-align: center;
+  padding: 30px;
+}
+
+.background-img-text {
+  color: #e67e22;
+  margin-top: 15vh;
+  font-size: 50px;
+}
+
+/* body {
   width: 100vh;
   height: 100vh;
   background: url("../images/REG-backImg.jpg") 0 0/100% 100% no-repeat;
-}
+} */
 
 .signup-form {
   font-family: "Roboto", sans-serif;
-  position: fixed;
   width: 450px;
-  height: 400px;
-  margin: 90px 90px auto;
-  background: rgba(225, 225, 225, 0.2);
+  padding: 0 10px;
+  margin: 50px auto;
   border-radius: 10px;
-}
-
-.form-header {
-  background-color: rgba(225, 225, 225, 0.3);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
 
 .form-header h1 {
@@ -40,14 +101,26 @@ body {
 /* Form Body */
 /*---------------------------------------*/
 
+.horizontal-group .left {
+  float: left;
+  width: 49%;
+}
+
+.horizontal-group .right {
+  float: right;
+  width: 49%;
+}
+
 .form-group {
   margin-bottom: 20px;
 }
 
 .form-body .label-title {
+  display: inline-block;
   color: chocolate;
   font-size: 17px;
   font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .form-input {
@@ -65,16 +138,6 @@ body {
   outline: none;
 }
 
-.horizontal-group .left {
-  float: left;
-  width: 49%;
-}
-
-.horizontal-group .right {
-  float: right;
-  width: 49%;
-}
-
 ::-webkit-input-placeholder {
   color: #d9d9d9;
 }
@@ -87,12 +150,7 @@ body {
 }
 
 .signup-form .form-footer {
-  background-color: rgba(225, 225, 225, 1.2);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  padding: 10px 40px;
   text-align: right;
-  border-top: 1px solid #cccccc;
 }
 
 .form-footer span {
@@ -110,7 +168,7 @@ body {
   font-size: 17px;
   border: none;
   border-radius: 5px;
-  color: rgb(180, 148, 125);
+  color: #ffffff;
   cursor: pointer;
 }
 
