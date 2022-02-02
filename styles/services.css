@@ -4,3 +4,76 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+.wholePage {
+  background-color: black;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+li {
+  list-style: none;
+}
+.topNav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 20px;
+}
+.forTransition li {
+  transition: 0.5s;
+}
+
+.topNavbar {
+  display: flex;
+  gap: 20px;
+}
+.listItem:hover,
+.listItem:active {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.listItemAnchor:hover {
+  transition: 0.5s;
+  transform: scale(0.3s);
+}
+
+.imgSlider {
+  background-image: url(/assets/images/slider-img1.jpg);
+  background-size: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+.darkOverlay {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.712);
+}
+
+.servicesArticles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 30px;
+}
+
+.serviceArticle {
+  border-radius: 5%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: blanchedalmond;
+  padding: 10px;
+}
+
+.topMiddle h2 {
+  justify-content: center;
+  text-align: center;
+  padding-top: 50px;
+}

@@ -7,42 +7,53 @@
     <title>Document</title>
     <script src="/scripts/services.js" defer></script>
     <link rel="stylesheet" href="/styles/services.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
   </head>
   <body>
-    <div class="whole-page">
+    <div class="wholePage">
       <!-- Top menu bar with logo-->
-      <div class="imgSlider"><div class="darkOverlay"></div></div>
-      <header class="header">
-        <div class="top">
-          <div class="logo">
-            <a href="/index.html" class="logo"
-              ><img src="/assets/images/Rectangle.png" alt="Our Logo"
-            /></a>
-          </div>
-          <nav class="navbar">
-            <ul>
-              <li class="listItem">
-                <a href="" class="listItemAnchor">Services</a>
-              </li>
-              <li class="listItem">
-                <a href="" class="listItemAnchor">I want in</a>
-              </li>
-              <li class="listItem">
-                <a href="" class="listItemAnchor">about us</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="topMiddle">
-            <h2 class="topText">
-              Over 20 services to choose from. Find what you like
-            </h2>
-            <div class="buttons">
-              <button class="button"></button>
-              <button class="button"></button>
+      <div class="imgSlider" id="imgSlider">
+        <div class="darkOverlay">
+          <header class="header">
+            <div class="topNav">
+              <div class="logo">
+                <a href="/index.html" class="logo"
+                  ><img
+                    class="logoImage"
+                    src="/assets/images/Rectangle.png"
+                    alt="Our Logo"
+                /></a>
+              </div>
+              <nav class="navbar">
+                <div class="forTransition">
+                  <ul class="topNavbar">
+                    <li class="listItem">
+                      <a href="" class="listItemAnchor">Services</a>
+                    </li>
+                    <li class="listItem">
+                      <a href="" class="listItemAnchor">I want in</a>
+                    </li>
+                    <li class="listItem">
+                      <a href="" class="listItemAnchor">about us</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
             </div>
-          </div>
+            <div class="middle">
+              <div class="topMiddle">
+                <h2 class="topText">
+                  Over 20 services to choose from. Find what you like
+                </h2>
+                <div class="buttons">
+                  <button class="button"></button>
+                  <button class="button"></button>
+                </div>
+              </div>
+            </div>
+          </header>
         </div>
-      </header>
+      </div>
       <!-- End of top menu bar with logo -->
 
       <!-- Services Section -->
@@ -116,7 +127,50 @@
       </article>
       <!-- End Of Services Section -->
       <footer class="footer">
-        <nav class="footer">ul>li*3></nav>
+        <div class="container">
+          <div class="gmap_canvas">
+            <iframe
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=armenian%20code%20academy&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            >
+            </iframe>
+          </div>
+          <div class="row">
+            <div class="footer-col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">our services</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">affiliate program</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h4>Online Shop</h4>
+              <ul>
+                <li><a href="#">protein</a></li>
+                <li><a href="#">bags</a></li>
+                <li><a href="#">shoes</a></li>
+                <li><a href="#">uniform</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h4>Follow Us</h4>
+              <div class="social-links">
+                <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+                <a href="#"> <i class="fab fa-twitter"></i> </a>
+                <a href="#"> <i class="fab fa-instagram"></i> </a>
+                <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
   </body>
