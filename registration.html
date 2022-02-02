@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="./styles/registration.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+  </head>
+  <body>
+    <div id="imgContainer" class="top-background">
+      <div class="dark-overlay">
+        <header>
+          <a href="/index.html">
+            <div class="logo">
+              <img src="/assets/images/Rectangle.png" alt="" />
+            </div>
+          </a>
+          <nav>
+            <ul class="nav-items">
+              <li class="nav-item"><a href="/services.html">Services</a></li>
+              <li class="nav-item">
+                <a href="/registration.html">I want In</a>
+              </li>
+              <li class="nav-item"><a href="#">About Us</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div class="top-text-and-buttons">
+          <h2 class="background-img-text">REGISTRATION</h2>
+        </div>
+      </div>
+    </div>
+    <form class="signup-form" action="#" method="get">
+      <!-- form body -->
+      <div class="form-body">
+        <!-- Firstname and Lastname -->
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label for="firstname" class="label-title">First name *</label>
+            <input
+              type="text"
+              id="firstname"
+              class="form-input"
+              required
+              placeholder="Name"
+              oninvalid="this.setCustomValidity('Please enter your name')"
+              oninput="this.setCustomValidity('')"
+            />
+          </div>
+          <div class="form-group right">
+            <label for="lastname" class="label-title">Last name *</label>
+            <input
+              type="text"
+              id="lastname"
+              class="form-input"
+              required
+              placeholder="Last Name"
+              oninvalid="this.setCustomValidity('Please enter your last name')"
+              oninput="this.setCustomValidity('')"
+            />
+          </div>
+        </div>
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email" class="label-title">Email*</label>
+          <input
+            type="email"
+            id="email"
+            class="form-input"
+            required
+            placeholder="Email"
+            oninvalid="this.setCustomValidity('Please enter your email')"
+            oninput="this.setCustomValidity('')"
+          />
+        </div>
+        <!-- Passwrod and confirm password -->
+
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label for="password" class="label-title">Password *</label>
+            <input
+              type="password"
+              id="password"
+              class="form-input"
+              placeholder="Password"
+              required="required"
+            />
+          </div>
+
+          <div class="form-group right">
+            <label for="confirm-password" class="label-title"
+              >Confirm Password *</label
+            >
+            <input
+              type="password"
+              class="form-input"
+              id="confirm-password"
+              placeholder="Confirm Password"
+              required="required"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- form footer -->
+      <div class="form-footer">
+        <button type="submit" class="btn">Create</button>
+      </div>
+    </form>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="gmap_canvas">
+          <iframe
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?q=armenian%20code%20academy&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          >
+          </iframe>
+        </div>
+        <div class="row">
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Online Shop</h4>
+            <ul>
+              <li><a href="#">protein</a></li>
+              <li><a href="#">bags</a></li>
+              <li><a href="#">shoes</a></li>
+              <li><a href="#">uniform</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+              <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+              <a href="#"> <i class="fab fa-twitter"></i> </a>
+              <a href="#"> <i class="fab fa-instagram"></i> </a>
+              <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
