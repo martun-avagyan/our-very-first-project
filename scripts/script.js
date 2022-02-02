@@ -9,7 +9,6 @@ let images = [
   "/assets/images/slider-img4.jpg",
   "/assets/images/slider-img5.jpg",
   "/assets/images/slider-img6.jpg",
-  "/assets/images/image.png",
 ];
 
 const initSlider = function () {
