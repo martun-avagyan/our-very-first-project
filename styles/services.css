@@ -72,8 +72,29 @@ li {
   padding: 10px;
 }
 
+.serviceArticle:hover {
+}
+
 .topMiddle h2 {
   justify-content: center;
   text-align: center;
   padding-top: 50px;
+}
+#infoGym {
+  background-image: url(/assets/myImages/imageGym.jpg);
+}
+#infoGX {
+  background-image: url(/assets/myImages/imageGX.jpg);
+}
+#infoSP {
+  background-image: url(/assets/myImages/imageSP.jpg);
+}
+#infoPT {
+  background-image: url(/assets/myImages/imagePT.jpg);
+}
+#infoSPA {
+  background-image: url(/assets/myImages/imageSPA.png);
+}
+#infoKids {
+  background-image: url(/assets/myImages/imageKidsFit.jpg);
 }
