@@ -19,3 +19,37 @@ const initSlider = function () {
 };
 
 initSlider();
+
+// Selectors
+
+const modal = document.querySelector(".modal");
+const infoGym = document.querySelector(".infoGym");
+const infoGX = document.querySelector(".infoGX");
+const infoSP = document.querySelector(".infoSP");
+const infoPT = document.querySelector(".infoPT");
+const infoSPA = document.querySelector(".infoSPA");
+const infoKids = document.querySelector(".infoKids");
+const overlay = document.querySelector(".overlay");
+const button = document.querySelector(".closeModal");
+
+// End Selectors
+
+infoGym.addEventListener("click", function () {
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+  const key = this.getAttribute("data-attribute-key");
+
+  const modalTitleEl = document.getElementById("modalTitle");
+  const modalDescEl = document.getElementById("modalDescription");
+  modalTitleEl.innerText = texts[key].title;
+  modalDescEl.innerText = texts[key].description;
+});
+
+overlay.addEventListener("click", function () {
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+});
+
+const texts = {
+  infoGYM: { title: "gym", description: "asassfdgfd" },
+};
