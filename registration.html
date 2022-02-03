@@ -38,15 +38,12 @@
         <div class="top-text-and-buttons">
           <h2 class="background-img-text">REGISTRATION</h2>
         </div>
-        <section class="buttons-login-registration">
-          If you already have an account, just
-          <button type="submit" class="btn" id="btn-login">LOGIN</button>
-        </section>
       </div>
     </div>
-    <!-- Email -->
-    <form class="signup-form" action="#" method="get">
-      <div class="login-form">
+    <!-- ////////////////////////LogIn////////////////////////////////// -->
+    <form class="logIn-form" action="#" method="get">
+      <div class="form-body">
+        <!-- Email -->
         <div class="form-group">
           <label for="email" class="label-title">Email*</label>
           <input
@@ -59,7 +56,8 @@
             oninput="this.setCustomValidity('')"
           />
         </div>
-        <!-- Passworrd -->
+        <!-- Password-->
+
         <div class="horizontal-group">
           <div class="form-group left">
             <label for="password" class="label-title">Password *</label>
@@ -71,7 +69,16 @@
               required="required"
             />
           </div>
+        </div>
       </div>
+
+      <!-- form footer -->
+      <div class="form-footer">
+        <button type="submit" class="btn">Login</button>
+      </div>
+    </form>
+    <!-- //////////////////////Registration///////////////////////////// -->
+    <form class="signup-form" action="#" method="get">
       <!-- form body -->
       <div class="form-body">
         <!-- Firstname and Lastname -->
@@ -195,6 +202,5 @@
         </div>
       </div>
     </footer>
-    <script src="./scripts/registration.js"></script>
   </body>
 </html>
