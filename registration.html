@@ -38,14 +38,20 @@
         <div class="top-text-and-buttons">
           <h2 class="background-img-text">REGISTRATION</h2>
         </div>
+        <section class="btn-login">
+          If you already have an account
+          <button type="submit" class="btn" id="btn-login">LOGIN</button>
+        </section>
       </div>
     </div>
-    <!-- ////////////////////////LogIn////////////////////////////////// -->
-    <form class="logIn-form" action="#" method="get">
+
+    <!-- ////////////////////////Login////////////////////////////////// -->
+
+    <form class="login-form display-none" id="login" action="#" method="get">
       <div class="form-body">
         <!-- Email -->
         <div class="form-group">
-          <label for="email" class="label-title">Email*</label>
+          <label for="email" class="label-title" id="lable-email">Email*</label>
           <input
             type="email"
             id="email"
@@ -57,28 +63,26 @@
           />
         </div>
         <!-- Password-->
-
-        <div class="horizontal-group">
-          <div class="form-group left">
-            <label for="password" class="label-title">Password *</label>
-            <input
-              type="password"
-              id="password"
-              class="form-input"
-              placeholder="Password"
-              required="required"
-            />
-          </div>
+        <div>
+          <label for="password" class="label-title">Password *</label>
+          <input
+            type="password"
+            id="password"
+            class="form-input"
+            placeholder="Password"
+            required="required"
+          />
         </div>
       </div>
-
       <!-- form footer -->
       <div class="form-footer">
         <button type="submit" class="btn">Login</button>
       </div>
     </form>
+
     <!-- //////////////////////Registration///////////////////////////// -->
-    <form class="signup-form" action="#" method="get">
+
+    <form class="signup-form" id="registration" action="#" method="get">
       <!-- form body -->
       <div class="form-body">
         <!-- Firstname and Lastname -->
@@ -113,7 +117,7 @@
           <label for="email" class="label-title">Email*</label>
           <input
             type="email"
-            id="email"
+            id="Email"
             class="form-input"
             required
             placeholder="Email"
@@ -128,7 +132,7 @@
             <label for="password" class="label-title">Password *</label>
             <input
               type="password"
-              id="password"
+              id="Password"
               class="form-input"
               placeholder="Password"
               required="required"
@@ -202,5 +206,6 @@
         </div>
       </div>
     </footer>
+    <script src="./scripts/registration.js"></script>
   </body>
 </html>

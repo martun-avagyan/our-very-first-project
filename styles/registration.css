@@ -79,12 +79,13 @@ nav {
   height: 100vh;
   background: url("../images/REG-backImg.jpg") 0 0/100% 100% no-repeat;
 } */
-
+.login-form,
 .signup-form {
   font-family: "Roboto", sans-serif;
   width: 700px;
   padding: 0 10px;
   margin: 50px auto;
+  margin-left: 330px;
   border-radius: 10px;
 }
 
@@ -148,7 +149,7 @@ nav {
 .form-footer {
   clear: both;
 }
-
+.login-form .form-footer,
 .signup-form .form-footer {
   text-align: right;
 }
@@ -175,4 +176,29 @@ nav {
 .btn:hover {
   background-color: white;
   color: chocolate;
+}
+/* login-form */
+.login-form #email,
+.login-form #password {
+  margin-left: 20px;
+  width: 400px;
+}
+.login-form #lable-email {
+  margin-left: 31px;
+}
+.login-form .form-footer {
+  padding: 15px 173px;
+}
+.btn-login {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  margin-left: 760px;
+}
+.btn-login .btn {
+  width: 70px;
+  height: 30px;
+  font-size: 13px;
+}
+.display-none {
+  display: none;
 }
