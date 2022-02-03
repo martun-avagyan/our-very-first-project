@@ -5,24 +5,192 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <script src="/scripts/services.js" defer></script>
+    <link rel="stylesheet" href="/styles/services.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
   </head>
   <body>
-    <div class="whole-page">
+    <div class="wholePage">
+      <!-- Modal -->
+      <div class="modal hidden">
+        <button class="closeModal">&times;</button>
+        <h4 id="modalTitle">I'm a modal window 😍</h4>
+        <p id="modalDescription">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+      <div class="overlay hidden">Overlay</div>
       <!-- Top menu bar with logo-->
-      <header class="header">
-        <div class="top">
-          <div class="logo">Logo</div>
-          <nav class="navbar">
-            <ul>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-            </ul>
-          </nav>
+      <div class="imgSlider" id="imgSlider">
+        <div class="darkOverlay">
+          <header class="header">
+            <div class="topNav">
+              <div class="logo">
+                <a href="/index.html" class="logo"
+                  ><img
+                    class="logoImage"
+                    src="/assets/images/Rectangle.png"
+                    alt="Our Logo"
+                /></a>
+              </div>
+              <nav class="navbar">
+                <div class="forTransition">
+                  <ul class="topNavbar">
+                    <li class="listItem">
+                      <a href="" class="listItemAnchor">Services</a>
+                    </li>
+                    <li class="listItem">
+                      <a href="" class="listItemAnchor">I want in</a>
+                    </li>
+                    <li class="listItem">
+                      <a href="" class="listItemAnchor">about us</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="middle">
+              <div class="topMiddle">
+                <h2 class="topText">
+                  Over 20 services to choose from. Find what you like
+                </h2>
+                <div class="buttons">
+                  <button class="button"></button>
+                  <button class="button"></button>
+                </div>
+              </div>
+            </div>
+          </header>
         </div>
-      </header>
+      </div>
       <!-- End of top menu bar with logo -->
+
+      <!-- Services Section -->
+      <article class="servicesArticles">
+        <div class="serviceArticle infoGym" data-attribute-key="infoGYM">
+          <h3 class="articleTitle">Gym</h3>
+          <p class="article">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            fugit quos eum necessitatibus placeat delectus veniam itaque magni
+            possimus dolorum, laudantium cupiditate fuga architecto laborum
+            facilis consequuntur aspernatur velit inventore iure distinctio hic
+            perferendis, ab officiis quibusdam. Ipsa quaerat vel dicta numquam
+            nobis inventore, possimus in. Aperiam tempore officia molestias.
+          </p>
+        </div>
+        <div class="serviceArticle infoGX">
+          <h3 class="articleTitle">Group Exercises</h3>
+          <p class="article">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
+            veniam commodi vitae sint, odio saepe quas deleniti quibusdam
+            provident. Laborum voluptatum doloribus eligendi et tenetur libero
+            sed iure voluptatem nemo soluta iste quam exercitationem, ex
+            incidunt, est delectus vitae hic cum dicta sunt, totam neque
+            provident cumque veritatis! Vel, fuga.
+          </p>
+        </div>
+        <div class="serviceArticle infoSP">
+          <h3 class="articleTitle">Swimming Pool</h3>
+          <p class="article">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
+            veniam commodi vitae sint, odio saepe quas deleniti quibusdam
+            provident. Laborum voluptatum doloribus eligendi et tenetur libero
+            sed iure voluptatem nemo soluta iste quam exercitationem, ex
+            incidunt, est delectus vitae hic cum dicta sunt, totam neque
+            provident cumque veritatis! Vel, fuga.
+          </p>
+        </div>
+        <div class="serviceArticle infoPT">
+          <h3 class="articleTitle">Personal Trainers</h3>
+          <p class="article">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
+            veniam commodi vitae sint, odio saepe quas deleniti quibusdam
+            provident. Laborum voluptatum doloribus eligendi et tenetur libero
+            sed iure voluptatem nemo soluta iste quam exercitationem, ex
+            incidunt, est delectus vitae hic cum dicta sunt, totam neque
+            provident cumque veritatis! Vel, fuga.
+          </p>
+        </div>
+        <div class="serviceArticle infoSPA">
+          <h3 class="articleTitle">Spa</h3>
+          <p class="article">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
+            veniam commodi vitae sint, odio saepe quas deleniti quibusdam
+            provident. Laborum voluptatum doloribus eligendi et tenetur libero
+            sed iure voluptatem nemo soluta iste quam exercitationem, ex
+            incidunt, est delectus vitae hic cum dicta sunt, totam neque
+            provident cumque veritatis! Vel, fuga.
+          </p>
+        </div>
+        <div class="serviceArticle infoKids">
+          <h3 class="articleTitle">For Kids</h3>
+          <p class="article">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+            reprehenderit! Quibusdam, mollitia repellendus. Reprehenderit culpa
+            velit harum dignissimos vitae dolore! Id voluptate voluptas quia
+            cum. Id nesciunt praesentium dicta esse excepturi corrupti aut
+            eveniet perferendis odit! Placeat, ad et reiciendis nesciunt impedit
+            amet molestiae vero. Blanditiis, veniam? Vero, enim labore?
+          </p>
+        </div>
+      </article>
+      <!-- End Of Services Section -->
+      <footer class="footer">
+        <div class="container">
+          <div class="gmap_canvas">
+            <iframe
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=armenian%20code%20academy&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            >
+            </iframe>
+          </div>
+          <div class="row">
+            <div class="footer-col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">our services</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">affiliate program</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h4>Online Shop</h4>
+              <ul>
+                <li><a href="#">protein</a></li>
+                <li><a href="#">bags</a></li>
+                <li><a href="#">shoes</a></li>
+                <li><a href="#">uniform</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-col">
+              <h4>Follow Us</h4>
+              <div class="social-links">
+                <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+                <a href="#"> <i class="fab fa-twitter"></i> </a>
+                <a href="#"> <i class="fab fa-instagram"></i> </a>
+                <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

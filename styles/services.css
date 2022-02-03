@@ -4,3 +4,194 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+.wholePage {
+  background-color: black;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+li {
+  list-style: none;
+}
+.topNav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 20px;
+}
+.forTransition li {
+  transition: 0.5s;
+}
+
+.topNavbar {
+  display: flex;
+  gap: 20px;
+}
+.listItem:hover,
+.listItem:active {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.listItem:hover a {
+  color: orangered;
+}
+.listItemAnchor:hover {
+  transition: 0.5s;
+  transform: scale(0.3s);
+}
+
+.imgSlider {
+  background-image: url(/assets/images/slider-img1.jpg);
+  background-size: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+.darkOverlay {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.712);
+}
+
+.servicesArticles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 30px;
+}
+
+.topMiddle h2 {
+  justify-content: center;
+  text-align: center;
+  padding-top: 50px;
+}
+.infoGym {
+  background-image: url(/assets/myImages/imageGym.jpg);
+}
+.infoGX {
+  background-image: url(/assets/myImages/imageGX.jpg);
+}
+.infoSP {
+  background-image: url(/assets/myImages/imageSP.jpg);
+}
+.infoPT {
+  background-image: url(/assets/myImages/imagePT.jpg);
+}
+.infoSPA {
+  background-image: url(/assets/myImages/imageSPA.png);
+}
+.infoKids {
+  background-image: url(/assets/myImages/imageKidsFit.jpg);
+}
+
+.serviceArticle {
+  display: flex;
+  height: 220px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: blanchedalmond;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.article {
+  display: flex;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding: 40px;
+  opacity: 0;
+  transition: 0.3s;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.serviceArticle h3 {
+  visibility: visible;
+  text-align: center;
+  align-items: center;
+  color: orangered;
+  font-size: 30px;
+}
+
+.serviceArticle:hover h3 {
+  visibility: hidden;
+}
+
+.serviceArticle:hover .article {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Creating a modal */
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 70%;
+
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
