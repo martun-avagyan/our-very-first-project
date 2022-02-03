@@ -41,8 +41,8 @@ infoGym.addEventListener("click", function () {
 
   const modalTitleEl = document.getElementById("modalTitle");
   const modalDescEl = document.getElementById("modalDescription");
-  modalTitleEl.innerText = texts[key].title;
-  modalDescEl.innerText = texts[key].description;
+  modalTitleEl.innerHTML = texts[key].title;
+  modalDescEl.innerHTML = texts[key].description;
 });
 
 overlay.addEventListener("click", function () {
@@ -51,5 +51,13 @@ overlay.addEventListener("click", function () {
 });
 
 const texts = {
-  infoGYM: { title: "gym", description: "asassfdgfd" },
+  infoGYM: {
+    title: "Most Advanced Equipment",
+    description: "<p class='title'>",
+  },
 };
+
+button.addEventListener("click", function () {
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+});
