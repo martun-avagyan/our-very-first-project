@@ -53,7 +53,7 @@ overlay.addEventListener("click", function () {
 const texts = {
   infoGYM: {
     title: "Most Advanced Equipment",
-    description: "<p class='title'>",
+    description: "<p class='title'>Just some text</p>",
   },
 };
 
