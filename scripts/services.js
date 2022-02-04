@@ -31,33 +31,53 @@ const infoSPA = document.querySelector(".infoSPA");
 const infoKids = document.querySelector(".infoKids");
 const overlay = document.querySelector(".overlay");
 const button = document.querySelector(".closeModal");
+const modalContent = document.querySelector(".modalWrapper");
 
 // End Selectors
 
-infoGym.addEventListener("click", function () {
+// Functions
+const hideModal = function () {
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+};
+const showModal = function () {
   modal.classList.remove("hidden");
   overlay.classList.remove("hidden");
-  const key = this.getAttribute("data-attribute-key");
-
-  const modalTitleEl = document.getElementById("modalTitle");
-  const modalDescEl = document.getElementById("modalDescription");
-  modalTitleEl.innerHTML = texts[key].title;
-  modalDescEl.innerHTML = texts[key].description;
-});
-
-overlay.addEventListener("click", function () {
-  modal.classList.add("hidden");
-  overlay.classList.add("hidden");
-});
-
-const texts = {
-  infoGYM: {
-    title: "Most Advanced Equipment",
-    description: "<p class='title'>Just some text</p>",
-  },
 };
 
-button.addEventListener("click", function () {
-  modal.classList.add("hidden");
-  overlay.classList.add("hidden");
+const openModalWithMyContent = function (element, content) {
+  element.addEventListener("click", function () {
+    showModal();
+    modalContent.insertAdjacentHTML("beforeend", content);
+  });
+};
+
+// End Functions
+
+// Global Variables
+
+const contentGym = "<div> <h3>GYM</h3> <p></p></div>";
+const contentGX = "<div> <h3>Group Exercises</h3> <p></p></div>";
+const contentSP = "<div> <h3>Swimming Pool</h3> <p></p></div>";
+const contentPT = "<div> <h3>Personal Trainers</h3> <p></p></div>";
+const contentSPA = "<div> <h3>SPA</h3> <p></p></div>";
+const contentKids = "<div> <h3>For Kids</h3> <p></p></div>";
+
+// End Global Variables
+
+overlay.addEventListener("click", function () {
+  modalContent.textContent = "";
+  hideModal();
 });
+
+button.addEventListener("click", function () {
+  modalContent.textContent = "";
+  hideModal();
+});
+
+openModalWithMyContent(infoGym, contentGym);
+openModalWithMyContent(infoGX, contentGX);
+openModalWithMyContent(infoSP, contentSP);
+openModalWithMyContent(infoPT, contentPT);
+openModalWithMyContent(infoSPA, contentSPA);
+openModalWithMyContent(infoKids, contentKids);
