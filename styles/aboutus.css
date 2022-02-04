@@ -39,3 +39,26 @@
   background-color: white;
   color: chocolate;
 }
+.right-side {
+  width: 69%;
+  display: flex;
+  margin-top: -20px;
+  color: white;
+}
+
+.right-side h2,
+h3 {
+  color: chocolate;
+  margin-top: 9px;
+}
+.right-side p,
+li {
+  margin-top: 5px;
+  font-size: 13px;
+}
+.right-side ul {
+  margin-left: 20px;
+}
+.display-none {
+  display: none;
+}
