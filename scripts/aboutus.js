@@ -15,8 +15,6 @@ btn_aboutUs.addEventListener(
       text_ourHistory.classList.add("display-none");
       text_mission.classList.add("display-none");
       text_whyChooseUs.classList.add("display-none");
-    } else {
-      text_aboutUs.classList.add("display-none");
     }
   })
 );
@@ -30,6 +28,7 @@ btn_ourHistory.addEventListener(
       text_whyChooseUs.classList.add("display-none");
     } else {
       text_ourHistory.classList.add("display-none");
+      text_aboutUs.classList.remove("display-none");
     }
   })
 );
@@ -43,6 +42,7 @@ btn_mission.addEventListener(
       text_whyChooseUs.classList.add("display-none");
     } else {
       text_mission.classList.add("display-none");
+      text_aboutUs.classList.remove("display-none");
     }
   })
 );
@@ -57,6 +57,7 @@ btn_whyChooseUs.addEventListener(
       text_mission.classList.add("display-none");
     } else {
       text_whyChooseUs.classList.add("display-none");
+      text_aboutUs.classList.remove("display-none");
     }
   })
 );
