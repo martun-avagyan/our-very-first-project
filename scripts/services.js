@@ -56,12 +56,18 @@ const openModalWithMyContent = function (element, content) {
 
 // Global Variables
 
-const contentGym = "<div> <h3>GYM</h3> <p></p></div>";
-const contentGX = "<div> <h3>Group Exercises</h3> <p></p></div>";
-const contentSP = "<div> <h3>Swimming Pool</h3> <p></p></div>";
-const contentPT = "<div> <h3>Personal Trainers</h3> <p></p></div>";
-const contentSPA = "<div> <h3>SPA</h3> <p></p></div>";
-const contentKids = "<div> <h3>For Kids</h3> <p></p></div>";
+const contentGym =
+  "<div> <h3>GYM</h3> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit in ipsam exercitationem deleniti quis, sequi delectus repudiandae. Voluptate eum pariatur facere error iusto odit accusamus explicabo quae qui, repellendus veritatis, magnam quos placeat dolores eaque. Tempora, esse exercitationem ullam obcaecati dolorum recusandae reprehenderit sint incidunt omnis? Velit consequuntur dolorem doloremque.</p><ul><li>First Advantage</li><li>Second Advantage</li><li>Third Advantage</li></ul></div>";
+const contentGX =
+  "<div> <h3>Group Exercises</h3> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit in ipsam exercitationem deleniti quis, sequi delectus repudiandae. Voluptate eum pariatur facere error iusto odit accusamus explicabo quae qui, repellendus veritatis, magnam quos placeat dolores eaque. Tempora, esse exercitationem ullam obcaecati dolorum recusandae reprehenderit sint incidunt omnis? Velit consequuntur dolorem doloremque.</p></div>";
+const contentSP =
+  "<div> <h3>Swimming Pool</h3> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit in ipsam exercitationem deleniti quis, sequi delectus repudiandae. Voluptate eum pariatur facere error iusto odit accusamus explicabo quae qui, repellendus veritatis, magnam quos placeat dolores eaque. Tempora, esse exercitationem ullam obcaecati dolorum recusandae reprehenderit sint incidunt omnis? Velit consequuntur dolorem doloremque.</p></div>";
+const contentPT =
+  "<div> <h3>Personal Trainers</h3> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit in ipsam exercitationem deleniti quis, sequi delectus repudiandae. Voluptate eum pariatur facere error iusto odit accusamus explicabo quae qui, repellendus veritatis, magnam quos placeat dolores eaque. Tempora, esse exercitationem ullam obcaecati dolorum recusandae reprehenderit sint incidunt omnis? Velit consequuntur dolorem doloremque.</p></div>";
+const contentSPA =
+  "<div> <h3>SPA</h3> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit in ipsam exercitationem deleniti quis, sequi delectus repudiandae. Voluptate eum pariatur facere error iusto odit accusamus explicabo quae qui, repellendus veritatis, magnam quos placeat dolores eaque. Tempora, esse exercitationem ullam obcaecati dolorum recusandae reprehenderit sint incidunt omnis? Velit consequuntur dolorem doloremque.</p></div>";
+const contentKids =
+  "<div> <h3>For Kids</h3> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit in ipsam exercitationem deleniti quis, sequi delectus repudiandae. Voluptate eum pariatur facere error iusto odit accusamus explicabo quae qui, repellendus veritatis, magnam quos placeat dolores eaque. Tempora, esse exercitationem ullam obcaecati dolorum recusandae reprehenderit sint incidunt omnis? Velit consequuntur dolorem doloremque.</p></div>";
 
 // End Global Variables
 
