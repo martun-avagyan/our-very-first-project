@@ -9,6 +9,7 @@
     <!-- Styles links -->
     <link rel="stylesheet" href="./styles/home-style.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
+      <link rel="stylesheet" href="./styles/todo-style.css" />
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,6 +21,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+
+  
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer" />
   </head>
 
   <body>
@@ -40,7 +49,7 @@
               </div>
             </div>
 
-            <div><a href="./Todo-list.html">To Do list</a></div>
+            <div><a href="./index.html">Home Page</a></div>
           </nav>
 
           <!-- LOGO DIV -->
@@ -48,23 +57,26 @@
             <img src="./assets/images/logo.png" alt="logo" />
           </div>
 
-          <!-- SLOGANS AND BUTTONS -->
-          <div class="center-text">
-            <div class="slogan1">'BEST FITNESS GYM'</div>
-            <div class="slogan2">
-              MAKE TIME WITH US, Get your body ready to fit.
-            </div>
+    <main>
 
-            <div class="buttons">
-              <button class="ready">I'm ready</button>
-              <button class="not-today">Not today?</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+ <h1>AMA Gym Task list</h1>
 
-    <main></main>
+  <form>
+    <input
+      type="text"
+      class="todo-input"
+      placeholder="Biceps, Triceps, Cardio etc"
+    />
+    <button class="todo-button" type="submit">
+      <i class="fas fa-plus-square"></i>
+    </button>
+  </form>
+  <div class="todo-container">
+    <ul class="todo-list"></ul>
+  </div>
+  <script src="./scripts/dom.js"></script>
+
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
