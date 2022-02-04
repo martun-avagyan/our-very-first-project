@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.form-body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+.buttons-content {
+  display: flex;
+  width: 1000px;
+  flex-direction: row;
+  border: solid chocolate;
+  border-radius: 2px;
+  margin-top: 200px;
+  margin-left: 150px;
+  max-height: 300px;
+  padding: 30px;
+}
+
+.left-side {
+  width: 29%;
+  display: flex;
+  flex-direction: column;
+}
+.left-side button {
+  width: 50%;
+  height: 25px;
+  border-radius: 4px;
+  margin-top: 20px;
+  background-color: chocolate;
+  color: white;
+  border: none;
+}
+.left-side button:hover {
+  background-color: white;
+  color: chocolate;
+}
