@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url("./slider-img4.jpg");
+  background-image: url("../assets/images/slider-img4.jpg");
   color: orangered;
   min-height: 100vh;
 }
@@ -87,10 +87,10 @@ form button:hover {
 
 .todo-item {
   padding: 0 8px;
-
 }
 
-.fa-trash, .fa-check {
+.fa-trash,
+.fa-check {
   pointer-events: none;
 }
 
@@ -100,6 +100,13 @@ form button:hover {
 }
 
 .fall {
-  transform: translateY(128px) rotateZ(20deg) ;
+  transform: translateY(128px) rotateZ(20deg);
   opacity: 0;
+}
+
+main h1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
 }
