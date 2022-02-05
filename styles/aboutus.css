@@ -3,32 +3,33 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: black;
+}
+
 .form-body {
   display: flex;
-  width: 100vw;
-  height: 100vh;
-  background-color: black;
 }
 .buttons-content {
   display: flex;
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   flex-direction: row;
   border: solid chocolate;
   border-radius: 2px;
-  margin-top: 200px;
-  margin-left: 150px;
-  max-height: 300px;
+  margin: 50px auto;
   padding: 30px;
 }
 
 .left-side {
-  width: 29%;
   display: flex;
+  padding: 20px;
   flex-direction: column;
 }
 .left-side button {
-  width: 50%;
-  height: 25px;
+  padding: 5px;
+  white-space: nowrap;
   border-radius: 4px;
   margin-top: 20px;
   background-color: chocolate;
@@ -40,9 +41,8 @@
   color: chocolate;
 }
 .right-side {
-  width: 69%;
-  display: flex;
-  margin-top: -20px;
+  width: 100%;
+  padding: 20px;
   color: white;
 }
 
