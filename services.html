@@ -11,6 +11,7 @@
     />
     <script src="/scripts/services.js" defer></script>
     <link rel="stylesheet" href="/styles/services.css" />
+    <link rel="stylesheet" href="/styles/header.css" />
     <link rel="stylesheet" href="/styles/footer.css" />
   </head>
   <body>
@@ -18,61 +19,40 @@
       <!-- Modal -->
       <div class="modal hidden">
         <button class="closeModal">&times;</button>
-        <h4 id="modalTitle">I'm a modal window 😍</h4>
-        <p id="modalDescription">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <div class="modalWrapper"></div>
       </div>
-      <div class="overlay hidden">Overlay</div>
+      <div class="overlay hidden"></div>
       <!-- Top menu bar with logo-->
-      <div class="imgSlider" id="imgSlider">
-        <div class="darkOverlay">
-          <header class="header">
-            <div class="topNav">
-              <div class="logo">
-                <a href="/index.html" class="logo"
-                  ><img
-                    class="logoImage"
-                    src="/assets/images/Rectangle.png"
-                    alt="Our Logo"
-                /></a>
-              </div>
-              <nav class="navbar">
-                <div class="forTransition">
-                  <ul class="topNavbar">
-                    <li class="listItem">
-                      <a href="" class="listItemAnchor">Services</a>
-                    </li>
-                    <li class="listItem">
-                      <a href="" class="listItemAnchor">I want in</a>
-                    </li>
-                    <li class="listItem">
-                      <a href="" class="listItemAnchor">about us</a>
-                    </li>
-                  </ul>
+
+      <div class="dark-overlay">
+        <header>
+          <div class="header-container">
+            <div class="darker">
+              <!-- NAVIGATION MENU-->
+              <div class="logoNavbar">
+                <!-- LOGO DIV -->
+                <div class="logo">
+                  <img src="./assets/images/logo.png" alt="logo" />
                 </div>
-              </nav>
-            </div>
-            <div class="middle">
-              <div class="topMiddle">
-                <h2 class="topText">
-                  Over 20 services to choose from. Find what you like
-                </h2>
-                <div class="buttons">
-                  <button class="button"></button>
-                  <button class="button"></button>
-                </div>
+                <nav class="navbar">
+                  <div class="dropdown">
+                    <a href="./services.html" class="dropbtn">Our Services</a>
+                    <div class="dropdown-content">
+                      <a href="/services.html">Gym</a>
+                      <a href="/services.html">Group Exercises</a>
+                      <a href="/services.html">Swimming Pool</a>
+                    </div>
+                  </div>
+                  <div><a href="/dailyPlanner.html">Daily Planner</a></div>
+                  <div><a href="/registration.html">I Want In</a></div>
+                  <div><a href="/aboutUs.html">About Us</a></div>
+                </nav>
               </div>
             </div>
-          </header>
-        </div>
+          </div>
+        </header>
       </div>
+
       <!-- End of top menu bar with logo -->
 
       <!-- Services Section -->
@@ -80,67 +60,54 @@
         <div class="serviceArticle infoGym" data-attribute-key="infoGYM">
           <h3 class="articleTitle">Gym</h3>
           <p class="article">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            fugit quos eum necessitatibus placeat delectus veniam itaque magni
-            possimus dolorum, laudantium cupiditate fuga architecto laborum
-            facilis consequuntur aspernatur velit inventore iure distinctio hic
-            perferendis, ab officiis quibusdam. Ipsa quaerat vel dicta numquam
-            nobis inventore, possimus in. Aperiam tempore officia molestias.
+            Fitness is the best medicine from stress and bad mood, which is
+            divided by general and physical: General fitness is accepted to
+            designate aspiring to optimum quality of life, to plugging in itself
+            spiritual, physical and other components.
           </p>
         </div>
         <div class="serviceArticle infoGX">
           <h3 class="articleTitle">Group Exercises</h3>
           <p class="article">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
-            veniam commodi vitae sint, odio saepe quas deleniti quibusdam
-            provident. Laborum voluptatum doloribus eligendi et tenetur libero
-            sed iure voluptatem nemo soluta iste quam exercitationem, ex
-            incidunt, est delectus vitae hic cum dicta sunt, totam neque
-            provident cumque veritatis! Vel, fuga.
+            Over 30 GX programs so that you can find the perfect fit for you.
+            Dance classes, cardio classes, strength training and also body and
+            mind classes with qualified instructors.
           </p>
         </div>
         <div class="serviceArticle infoSP">
           <h3 class="articleTitle">Swimming Pool</h3>
           <p class="article">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
-            veniam commodi vitae sint, odio saepe quas deleniti quibusdam
-            provident. Laborum voluptatum doloribus eligendi et tenetur libero
-            sed iure voluptatem nemo soluta iste quam exercitationem, ex
-            incidunt, est delectus vitae hic cum dicta sunt, totam neque
-            provident cumque veritatis! Vel, fuga.
+            We have an olympic swimming pool so be ready to dive into a
+            professionally made pool which is using an ozone filtering system to
+            keep you safe healthy and happy. As well there are sand filters the
+            water temperature is at 26 degrees to keep you comfy.
           </p>
         </div>
         <div class="serviceArticle infoPT">
           <h3 class="articleTitle">Personal Trainers</h3>
           <p class="article">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
-            veniam commodi vitae sint, odio saepe quas deleniti quibusdam
-            provident. Laborum voluptatum doloribus eligendi et tenetur libero
-            sed iure voluptatem nemo soluta iste quam exercitationem, ex
-            incidunt, est delectus vitae hic cum dicta sunt, totam neque
-            provident cumque veritatis! Vel, fuga.
+            Highly qualified personal trainers, that will help you achieve
+            whatever goals you might have. Losing weight, strengthening your
+            muscles or just staying in shape. They will walk every single step
+            with you on your journey of becoming the best you you can be
           </p>
         </div>
         <div class="serviceArticle infoSPA">
           <h3 class="articleTitle">Spa</h3>
           <p class="article">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
-            veniam commodi vitae sint, odio saepe quas deleniti quibusdam
-            provident. Laborum voluptatum doloribus eligendi et tenetur libero
-            sed iure voluptatem nemo soluta iste quam exercitationem, ex
-            incidunt, est delectus vitae hic cum dicta sunt, totam neque
-            provident cumque veritatis! Vel, fuga.
+            Get away from it all and chill out in peace and tranquillity and a
+            delicious light bite style lunch while you’re there. Oh, and did we
+            mention the refreshing express facial, manicure and deep tissue back
+            massage that you’ll lose yourself in while you’re indulging?
           </p>
         </div>
         <div class="serviceArticle infoKids">
           <h3 class="articleTitle">For Kids</h3>
           <p class="article">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
-            reprehenderit! Quibusdam, mollitia repellendus. Reprehenderit culpa
-            velit harum dignissimos vitae dolore! Id voluptate voluptas quia
-            cum. Id nesciunt praesentium dicta esse excepturi corrupti aut
-            eveniet perferendis odit! Placeat, ad et reiciendis nesciunt impedit
-            amet molestiae vero. Blanditiis, veniam? Vero, enim labore?
+            Over 10 group exercises for kids with fully qualified instructors.
+            Ballet dancing, gymnastics, light cardio trainings. We also provide
+            access to kids room for our members where they can watch cartoons
+            and play under supervision.
           </p>
         </div>
       </article>
