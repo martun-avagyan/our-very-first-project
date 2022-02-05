@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url("../assets/images/slider-img4.jpg");
+  background-color: #000;
   color: orangered;
   min-height: 100vh;
 }
@@ -102,6 +102,10 @@ form button:hover {
 .fall {
   transform: translateY(128px) rotateZ(20deg);
   opacity: 0;
+}
+
+main {
+  padding: 40px 0;
 }
 
 main h1 {

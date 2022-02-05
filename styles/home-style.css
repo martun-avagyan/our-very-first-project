@@ -56,115 +56,26 @@ header {
   }
 }
 
-/* ////// navigation menu start //////// */
-
-.navbar {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-  margin-right: 152px;
-  padding-top: 46px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.navbar a {
-  display: inline-block;
-  text-decoration: none;
-  text-align: center;
-  color: rgba(255, 255, 255, 1);
-  margin-left: 50px;
-  font-size: 24px;
-  transition: all 0.5s ease;
-  cursor: pointer;
-}
-
-.navbar a:hover {
-  color: rgba(255, 69, 0, 1);
-  transform: scale(1.1);
-}
-
-/* ////// navigation menu End //////// */
-
-/* ////// dropdown menu start //////// */
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  transition: all 0.8s ease;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  left: 30px;
-  background-color: rgba(255, 69, 0, 0.5);
-  border-radius: 8px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  margin: auto;
-  text-align: center;
-}
-
-.dropdown-content a {
-  color: white;
-  padding-bottom: 10px;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 8px;
-  margin: auto;
-  text-align: center;
-  transform: scale(1.05);
-}
-
-.dropdown-content a:hover {
-  background-color: white;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* ////// dropdown menu end //////// */
-
-.logo {
-  display: inline-block;
-  margin: -50px 0 0 132px;
-  font-size: 48px;
-  cursor: pointer;
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-.logo img {
-  height: 80px;
-  width: auto;
-  color: white;
-}
-
-.darker {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
 
 /* ////// Buttons //////// */
 
 .ready {
-  background-color: orangered;
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   border: 1px solid orangered;
   width: 145px;
   height: 45px;
   color: white;
   font-size: 23px;
+  margin-left: 21px;
   opacity: 0.8;
-  margin: 20px;
 }
 
 .ready:hover {
   opacity: 1;
   transform: scale(1.07);
   cursor: pointer;
+  background-color: orangered;
 }
 
 .not-today {
@@ -183,6 +94,7 @@ header {
   opacity: 1;
   transform: scale(1.07);
   cursor: pointer;
+  background-color: orangered;
 }
 
 /* ////// Buttons end //////// */

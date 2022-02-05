@@ -44,16 +44,6 @@ li {
   transform: scale(0.3s);
 }
 
-.imgSlider {
-  background-image: url(/assets/images/slider-img1.jpg);
-  background-size: 100vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: 0.3s;
-  min-height: 100vh;
-  background-attachment: fixed;
-}
 .darkOverlay {
   height: 100vh;
   background-position: center;

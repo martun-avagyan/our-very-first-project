@@ -11,6 +11,7 @@
     />
     <script src="/scripts/services.js" defer></script>
     <link rel="stylesheet" href="/styles/services.css" />
+    <link rel="stylesheet" href="/styles/header.css" />
     <link rel="stylesheet" href="/styles/footer.css" />
   </head>
   <body>
@@ -22,49 +23,36 @@
       </div>
       <div class="overlay hidden"></div>
       <!-- Top menu bar with logo-->
-      <div class="imgSlider" id="imgSlider">
-        <div class="darkOverlay">
-          <header class="header">
-            <div class="topNav">
-              <div class="logo">
-                <a href="/index.html" class="logo"
-                  ><img
-                    class="logoImage"
-                    src="/assets/images/Rectangle.png"
-                    alt="Our Logo"
-                /></a>
-              </div>
-              <nav class="navbar">
-                <div class="forTransition">
-                  <ul class="topNavbar">
-                    <li class="listItem">
-                      <a href="" class="listItemAnchor">Services</a>
-                    </li>
-                    <li class="listItem">
-                      <a href="" class="listItemAnchor">I want in</a>
-                    </li>
-                    <li class="listItem">
-                      <a href="" class="listItemAnchor">about us</a>
-                    </li>
-                  </ul>
+
+      <div class="dark-overlay">
+        <header>
+          <div class="header-container">
+            <div class="darker">
+              <!-- NAVIGATION MENU-->
+              <div class="logoNavbar">
+                <!-- LOGO DIV -->
+                <div class="logo">
+                  <img src="./assets/images/logo.png" alt="logo" />
                 </div>
-              </nav>
-            </div>
-            <div class="middle">
-              <div class="topMiddle">
-                <h2 class="topText">
-                  Over 20 services to choose from <br />
-                  Find what you LOVE
-                </h2>
-                <div class="buttons">
-                  <button class="button"></button>
-                  <button class="button"></button>
-                </div>
+                <nav class="navbar">
+                  <div class="dropdown">
+                    <a href="./services.html" class="dropbtn">Our Services</a>
+                    <div class="dropdown-content">
+                      <a href="/services.html">Gym</a>
+                      <a href="/services.html">Group Exercises</a>
+                      <a href="/services.html">Swimming Pool</a>
+                    </div>
+                  </div>
+                  <div><a href="/dailyPlanner.html">Daily Planner</a></div>
+                  <div><a href="/registration.html">I Want In</a></div>
+                  <div><a href="/aboutUs.html">About Us</a></div>
+                </nav>
               </div>
             </div>
-          </header>
-        </div>
+          </div>
+        </header>
       </div>
+
       <!-- End of top menu bar with logo -->
 
       <!-- Services Section -->
