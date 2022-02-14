@@ -153,3 +153,21 @@ header {
 .dropdown-content a {
   font-size: 22px;
 }
+
+@keyframes gettingHi {
+  0% {
+    width: 0vh;
+  }
+  25% {
+  }
+  50% {
+  }
+  75% {
+  }
+  100% {
+    width: 100vh;
+  }
+}
+.something-animation {
+  animation: gettingHi 5px linear infinite !important;
+}

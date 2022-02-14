@@ -174,7 +174,7 @@ li {
   z-index: 10;
   color: black;
   text-align: center;
-  background-color: orangered;
+  background-color: rgb(120, 206, 78);
 }
 
 .overlay {
@@ -193,14 +193,14 @@ li {
   left: 94%;
   bottom: 85%;
   font-size: 2rem;
-  color: #333;
+  color: rgb(183, 240, 118);
   cursor: pointer;
   border: none;
   background: none;
 }
 
 .modalWrapper {
-  background-color: rgb(255, 133, 89);
+  background-color: rgb(236, 154, 59);
   width: 100%;
   height: 100%;
   border-radius: 5px;

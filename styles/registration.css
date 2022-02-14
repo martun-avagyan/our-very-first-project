@@ -62,6 +62,8 @@ body {
   margin: 50px auto;
   margin-left: 330px;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .form-header h1 {
@@ -176,4 +178,8 @@ body {
 }
 .display-none {
   display: none;
+}
+
+#create {
+  display: inline-block;
 }
